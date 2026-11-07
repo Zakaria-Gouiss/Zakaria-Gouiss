@@ -45,7 +45,7 @@ export default function SiteHeader() {
 
         <a
           className="header-action"
-          href="/gouiss_resume.pdf"
+          href={`${import.meta.env.BASE_URL}/gouiss_resume.pdf`}
           download="gouiss_zakaria_resume.pdf"
         >
           <span>Resume.pdf</span>
