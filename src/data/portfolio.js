@@ -1,6 +1,10 @@
+import engagementLiveImage from '../assets/engagementlive.jpg'
+import gradioImage from '../assets/gradio.jpg'
+import lyweekImage from '../assets/lyweek.jpg'
+
 export const profile = {
   name: 'Zakaria Gouiss',
-  email: 'alexander@nku.edu',
+  email: 'zgouiss15@gmail.com',
   role: 'Software and Machine Learning Engineer',
   location: 'Greater Cincinnati Metropolitan Area',
   github: 'https://github.com/Zakaria-Gouiss/',
@@ -19,87 +23,93 @@ export const navigation = [
 export const experience = [
   {
     number: '01',
-    company: 'Medpace',
-    field: 'Clinical Trial Infrastructure',
-    role: 'Software Engineering Intern',
-    period: 'May 2024 — Aug 2024',
-    location: 'Cincinnati, OH [HQ]',
+    company: 'GE Aerospace',
+    field: 'Commercial & Military Jet Engine Manufacturer',
+    role: 'Cybersecurity Intern',
+    period: 'Jun 2026 — Aug 2026',
+    location: 'Evendale, OH',
     summary:
-      'Engineered robust full-stack clinical trial web modules and high-throughput backend services supporting global pharmaceutical research and regulatory patient data capture.',
+      'Worked within various IT and cybersecurity teams at GE Aerospace to leverage digital technologies to create innovative solutions to solve business problems.',
     achievements: [
-      'Architected and optimized C#/.NET 8 REST validation endpoints, reducing patient data payload validation latency by 28%.',
-      'Authored scalable SQL Server migration scripts and transactional stored procedures for high-concurrency electronic data capture (EDC) systems.',
-      'Containerized legacy staging environments using Docker, cutting developer onboarding and local staging turnaround by 50%.',
+      'Software engineer experience in translating stakeholder feedback into working web solutions via Agile software development using React, PostgreSQL, TypeScript, and Docker',
+      'Collaborated on Operational Technology (OT) initiatives by analyzing data from multiple inventory sources to support network segmentation and cybersecurity objectives',
+      'Supporting digital transformation initiatives by migrating projects into new reporting softwares to improve accessibility, visibility, and reporting for high-priority cybersecurity initiatives',
+      'Worked directly on lean methodology teams as part of priority and committee responsibilities to maximize customer value while minimizing waste in accordance to the GE Aerospace behaviors'
     ],
     technologies: [
-      'C# / .NET 8',
-      'SQL Server',
-      'Docker Containers',
-      'REST Microservices',
-      'CI/CD Pipeline',
+      
+      'React & TypeScript',
+      'PostgreSQL',
+      'Project Management',
+      'Cybersecurity',
+      'LEAN Methodology',
+      'Operational Technology'
     ],
   },
   {
     number: '02',
-    company: 'GE Aerospace',
-    field: 'Aviation Propulsion & Avionics',
-    role: 'Software Engineering Intern',
-    period: 'Aug 2023 — Dec 2023',
-    location: 'Evendale, OH [Aviation Facility]',
+    company: 'Medpace',
+    field: 'Clinical Research Organization',
+    role: 'Network Engineer Intern',
+    period: 'Jan 2026 — May 2026',
+    location: 'Cincinnati, OH',
     summary:
-      'Contributed to flight propulsion telemetry evaluation tools used by aircraft engineers to ingest, evaluate, and visualize real-time turbofan engine performance during critical test cell operations.',
+      'Supported enterprise network, security, and data center infrastructure operations across production and lab environments.',
     achievements: [
-      'Constructed real-time streaming data ingestion pipelines in Python to automate statistical anomaly identification across engine run cycles.',
-      'Engineered interactive telemetry monitor views in React, TypeScript, and high-frequency HTML5 Canvas graphing tools for sub-millisecond dynamic updates.',
-      'Implemented automated cloud integration tests via AWS (S3, Lambda) with complete coverage utilizing pytest and Playwright.',
+      'Contributed to Arista POC environment setup, configuration validation, and connectivity testing, supporting the selection of a solution that was 33% more cost-efficient than the existing vendor',
+      'Supported switch wipe and refresh operations as part of infrastructure lifecycle management, including as part of a new India-based location',
+      'Developed Guardicore microsegmentation policy and engaged in validation and rule enforcement testing to prevent lateral movement ',
+      'Worked on daily ServiceNow tickets and troubleshooting for secure web access, proxy, and policy enforcement issues to maintain the Zscaler zero-trust environment '
     ],
     technologies: [
-      'Python',
-      'React & TypeScript',
-      'AWS (S3 / Lambda)',
-      'Telemetry Stream',
-      'Automated Testing',
+      'Cisco Hardware/Software',
+      'Secure Shell (SSH)',
+      'ServiceNow',
+      'Microsegmentation',
+      'Zscaler Zero-Trust',
+      'Microsoft Office 365'
     ],
   },
+  
 ]
 
 export const projects = [
   {
-    title: 'Full-Stack Assignment & Syllabus Tracker',
-    category: 'Flagship system',
-    status: 'In production',
+    title: 'Engagement.live',
+    category: 'NKU Hackathon',
     description:
-      'An autonomous academic productivity engine that parses complex multi-page course syllabi (PDF/DOCX), extracts deadline milestones, and calculates priority matrices based on syllabus weighting and deadline proximity with interactive Kanban synchronization.',
+      'Collaborated on a campus app for NKU built during the 2026 NKU Community Hackathon, and awarded first place. The project combines campus navigation, parking and rec availability, schedule planning, event discovery, and admin tooling into a single app. ',
+    technologies: ['Leaflet', 'Tailwind CSS', 'React with JavaScript', 'MongoDB', 'Node & Express', 'OpenStreetMap'],
+    repositoryLabel: 'Check it out',
+    link: 'https://pbierley.github.io/NKU-Community-Hackathon/',
+    imageLink: engagementLiveImage
+    
+  },
+  {
+    title: 'LyWeek',
+    category: 'Full-Stack Web Dev',
+    description:
+      'A designated weekly assignment tracker for college students. Allows user to create courses and assignments for each course for a designated semester, updating them and completing them each week.',
     technologies: [
-      'TypeScript',
-      'React 18',
+      'JavaScript',
+      'React',
       'Node.js / Express',
       'PostgreSQL',
-      'Redis Cache',
-      'Tailwind CSS',
+      'HTML / CSS',
+      'REST APIs'
     ],
-    repositoryLabel: 'Inspect repository',
-    featured: true,
+    repositoryLabel: 'Try it yourself',
+    link: 'https://lyweek.vercel.app',
+    imageLink: lyweekImage
   },
+  
   {
-    title: 'Campus Navigator & Peer Connect',
-    category: '1st place winner',
-    subtitle: 'NKU Hackathon',
+    title: 'CNN Clothing Classifier',
+    category: 'Deep Learning',
     description:
-      'Geospatial university study coordinator allowing students to map live study capacity, organize ad-hoc exam reviews, and coordinate study sessions via low-latency WebSockets.',
-    technologies: ['Next.js', 'FastAPI', 'Mapbox GL', 'WebSockets'],
-    repositoryLabel: 'Explore code',
-    metric: 'Hackathon build',
-  },
-  {
-    title: 'Neural Vision Defect Classifier',
-    category: 'Computer vision research',
-    description:
-      'Industrial component anomaly detection architecture trained on surface material crack benchmarks using fine-tuned ResNet-50 and Vision Transformer backbones with automated inference telemetry.',
-    technologies: ['PyTorch', 'OpenCV', 'TorchVision', 'NumPy'],
-    repositoryLabel: 'Inspect architecture',
-    metric: 'Inference: 14ms / frame',
-    score: '98.4% ROC AUC',
+      'An independently designed and trained custom convolutional neural network designed to accurately classify garments of clothing. Acheived 87% accuracy on a 25GB dataset of over 44,000 high-quality images.',
+    technologies: ['TensorFlow', 'Pandas', 'Python', 'NumPy', 'Jupyter Notebooks', 'Keras', 'Matplotlib'],
+    imageLink: gradioImage
   },
 ]
 
@@ -108,40 +118,39 @@ export const skillGroups = [
     number: '01',
     name: 'Languages',
     label: 'Core',
-    skills: ['Python', 'TypeScript', 'C#', 'Java', 'C++', 'SQL', 'JavaScript'],
+    skills: ['Python', 'TypeScript', 'C', 'Java', 'C++', 'SQL', 'JavaScript'],
   },
   {
     number: '02',
     name: 'Backends & Storage',
     label: 'Persistence',
     skills: [
-      'FastAPI',
-      '.NET 8 / Core',
+      'REST APIs',
       'Node.js',
       'PostgreSQL',
       'SQL Server',
-      'Redis',
-      'WebSockets',
+      'Express',
+      'CORS',
     ],
   },
   {
     number: '03',
-    name: 'AI & Vision',
+    name: 'AI & ML',
     label: 'Inference',
     skills: [
-      'PyTorch',
-      'OpenCV',
-      'TorchVision',
+      'Numpy / Pandas',
       'TensorFlow',
       'Scikit-Learn',
-      'NumPy / Pandas',
+      'Agentic AI / LLMs',
+      'Classification',
+      'Regression'
     ],
   },
   {
     number: '04',
     name: 'Frontend Engineering',
     label: 'UI / UX',
-    skills: ['React 18', 'Next.js', 'Tailwind CSS', 'HTML5 Canvas', 'Vite / Webpack'],
+    skills: ['React', 'CSS', 'HTML5', 'Vite', 'UI Design', 'Tailwind', 'JavaScript', 'ESLint'],
   },
   {
     number: '05',
@@ -149,22 +158,25 @@ export const skillGroups = [
     label: 'Infra',
     skills: [
       'Docker',
-      'AWS (S3, Lambda)',
-      'GitHub Actions',
-      'Linux / Bash',
-      'CI/CD Automation',
+      'Git / GitHub',
+      'CI/CD',
+      'Ubuntu Linux',
+      'Deployment'
     ],
   },
   {
-    number: '06',
-    name: 'Architecture & Quality',
-    label: 'Practices',
+     number: '06',
+    name: 'IT Infrastructure',
+    label: 'Infra',
     skills: [
-      'Distributed Systems',
-      'TDD (Test-Driven)',
-      'Microservices',
-      'Telemetry & Logging',
-      'REST APIs',
+      'SSH',
+      'Cybersecurity',
+      'DHCP / DNS',
+      'IPv4',
+      'Cisco',
+      'Routers & Switches',
+      'Segmentation',
+      'Network traffic'
     ],
   },
 ]
@@ -173,12 +185,12 @@ export const curriculum = [
   {
     title: 'Data Structures & Algorithms',
     description:
-      'Graph theory, self-balancing trees, dynamic programming, complexity proofs.',
+      'Graph theory, self-balancing trees, time complexity, key algorithms & data structures.',
   },
   {
-    title: 'Distributed & Operating Systems',
+    title: 'Object-Oriented Programming',
     description:
-      'Concurrency, POSIX system calls, process scheduling, virtual memory paging.',
+      'Java, C++, inheritance, polymorphism, abstraction/interfaces, GUIs with Swing and AWT, data encapsulation.',
   },
   {
     title: 'Machine Learning & AI',
@@ -188,6 +200,6 @@ export const curriculum = [
   {
     title: 'Database Systems',
     description:
-      'Relational schemas, B-tree indexes, ACID transactions, execution planning.',
+      'Relational schemas, ACID transactions, backend engineering, Oracle SQL.',
   },
 ]

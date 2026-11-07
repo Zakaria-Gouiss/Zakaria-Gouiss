@@ -11,16 +11,13 @@ export default function ExperienceSection() {
             <div className="experience-card__header">
               <div>
                 <div className="experience-card__titleline">
-                  <span className="index-badge">Internship {job.number}</span>
                   <h3>{job.company}</h3>
-                  <span className="experience-card__field">// {job.field}</span>
+                  <span className="experience-card__field"> {job.field}</span>
                 </div>
-                <p className="experience-card__role">
-                  <span aria-hidden="true">&gt;</span> Role: {job.role}
-                </p>
+                <p className="experience-card__role">{job.role}</p>
               </div>
               <div className="experience-card__dates">
-                <strong>Period: {job.period}</strong>
+                <strong> {job.period}</strong>
                 <span>{job.location}</span>
               </div>
             </div>
@@ -29,7 +26,7 @@ export default function ExperienceSection() {
               <ul className="terminal-list">
                 {job.achievements.map((achievement) => (
                   <li key={achievement}>
-                    <span aria-hidden="true">&gt;</span>
+                    <span aria-hidden="true">.</span>
                     <span>{achievement}</span>
                   </li>
                 ))}

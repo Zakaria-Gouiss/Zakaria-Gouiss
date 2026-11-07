@@ -23,33 +23,42 @@ const highlights = [
 
 export default function AboutSection() {
   return (
-    <section className="content-section" id="about">
+    <section className="content-section about-section" id="about">
       <SectionHeading number="01" title="About Me" />
       <div className="about-layout">
         <article className="panel about-story">
-          <p className="eyebrow">Engineering philosophy & mission</p>
+          <p className="eyebrow">My philosophy & mission</p>
           <h3>
-            Bridging rigorous computer science theory with high-availability
-            enterprise execution in deep environments.
+            Transforming ideas into technology-based solutions to spread
+            knowledge and information.
           </h3>
           <p>
             I am a graduating senior in Computer Science at{" "}
-            <strong>Northern Kentucky University (NKU)</strong>, focused on
-            large-scale distributed architectures, fault-tolerant ingestion
-            pipelines, and applied machine intelligence.
+            <strong>Northern Kentucky University</strong>, focused on developing
+            full-stack software solutions and machine learning projects.
           </p>
           <p>
-            Across two enterprise engineering internships, I contributed to
-            mission-critical platforms. At <strong>Medpace</strong>, I developed
-            and audited high-concurrency clinical trial systems operating under
-            strict regulatory compliance. At <strong>GE Aerospace</strong>, I
-            constructed real-time telemetry processing pipelines handling live
-            aircraft turbofan flight tests with sub-millisecond tolerances.
+            Across <strong>enterprise internships</strong>, I contributed to
+            using information technology to solve business problems. At Medpace,
+            I developed and audited microsegmentation policy and helped analyze
+            network data to support a more cost-effective vendor solution. At GE
+            Aerospace, I experimented and helped deploy new project management
+            sofware for high-priority cybersecurity initiatives.
           </p>
           <p>
-            Every system I design is built with production durability in mind:
-            resilient against edge cases, decoupled, load-tested, and observed
-            with comprehensive telemetry.
+            My <strong>philosophy</strong> is simple: With all of the latest
+            technology trends, there is always an exciting opportunity to
+            increase productivity, spread valuable knowledge, and learning new
+            skills. I use digital and information technology to embark on these
+            opportunities to help design a future where accessing information
+            and gaining knowledge is available for all.
+          </p>
+          <p>
+            I always enjoy networking with others in the world of technology and
+            learn new tech skills every day. I use my skills throughout my
+            professional and personal projects to help work towards my mission
+            of a more informed and intelligent society. And outside of tech, I
+            enjoy my hobbies of making music and playing soccer :)
           </p>
         </article>
         {/* add 2 pictures, 1 of hackathon, 1 at GE*/}

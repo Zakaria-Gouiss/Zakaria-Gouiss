@@ -43,7 +43,11 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <a className="header-action" href="#contact">
+        <a
+          className="header-action"
+          href="/gouiss_resume.pdf"
+          download="gouiss_zakaria_resume.pdf"
+        >
           <span>Resume.pdf</span>
           <span aria-hidden="true">↓</span>
         </a>

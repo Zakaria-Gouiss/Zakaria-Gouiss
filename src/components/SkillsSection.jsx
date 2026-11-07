@@ -9,10 +9,7 @@ export default function SkillsSection() {
         {skillGroups.map((group) => (
           <article className="panel skill-card" key={group.name}>
             <div className="skill-card__heading">
-              <h3>
-                <span>{group.number}/</span> {group.name}
-              </h3>
-              <span>{group.label}</span>
+              <h3>{group.name}</h3>
             </div>
             <div className="tag-list">
               {group.skills.map((skill) => (

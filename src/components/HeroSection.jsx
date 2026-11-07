@@ -63,7 +63,7 @@ export default function HeroSection() {
           <div className="profile-art__orbit profile-art__orbit--one" />
           <div className="profile-art__orbit profile-art__orbit--two" />
           <div className="profile-art__glow" />
-          <div className="profile-art__monogram">AM</div>
+          <div className="profile-art__monogram">Z G</div>
         </div>
       </aside>
     </section>

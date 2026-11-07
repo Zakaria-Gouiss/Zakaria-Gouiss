@@ -8,14 +8,18 @@ export default function EducationSection() {
       <div className="panel education-card">
         <div className="education-card__degree">
           <span className="index-badge">Northern Kentucky University</span>
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>College of Informatics • Highland Heights, KY</p>
+          <h3>Bachelor of Science, Computer Science</h3>
+          <p>College of Informatics &nbsp; • &nbsp; Highland Heights, KY</p>
           <div className="education-card__facts">
             <p>
-              Projected graduation: <strong>December 2025</strong>
+              Minors&nbsp;/&nbsp;Focus Areas:{" "}
+              <strong>Applied AI, Mathematics</strong>
             </p>
             <p>
-              Academic benchmark: <strong>3.92 / 4.00 cumulative GPA</strong>
+              Projected graduation: <strong>May 2027</strong>
+            </p>
+            <p>
+              Academic Grades: <strong>3.92 / 4.00 cumulative GPA</strong>
             </p>
             <span>
               Honors: Dean&apos;s List Honor Roll (All Active Semesters)
@@ -23,7 +27,7 @@ export default function EducationSection() {
           </div>
         </div>
         <div className="education-card__curriculum">
-          <p className="eyebrow">&gt;&gt; Core technical curriculum:</p>
+          <p className="eyebrow"> Core technical curriculum:</p>
           <div className="curriculum-grid">
             {curriculum.map((course) => (
               <article className="curriculum-card" key={course.title}>
