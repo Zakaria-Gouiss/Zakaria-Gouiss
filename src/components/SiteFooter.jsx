@@ -15,7 +15,6 @@ export default function SiteFooter() {
           <a href={profile.linkedIn} rel="noreferrer" target="_blank">
             LinkedIn
           </a>
-          <a href="#contact">Resume</a>
           <a className="site-footer__surface" href="#hero">
             Go to Top ↑
           </a>
