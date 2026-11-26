@@ -98,7 +98,7 @@ export const projects = [
       'Vercel'
     ],
     repositoryLabel: 'Try it yourself',
-    link: 'https://lyweek.vercel.app',
+    link: 'https://lyweek.gouiss.com',
     imageLink: lyweekImage
   },
   
