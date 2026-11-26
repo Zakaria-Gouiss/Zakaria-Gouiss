@@ -73,7 +73,7 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Engagement.live',
+    title: 'EngagementLive',
     category: 'NKU Hackathon',
     description:
       'Collaborated on a campus app for NKU built during the 2026 NKU Community Hackathon, and awarded first place. The project combines campus navigation, parking and rec availability, event discovery, and admin tooling into a single applications. ',

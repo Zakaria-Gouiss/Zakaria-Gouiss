@@ -275,6 +275,10 @@
 .contact-form label { margin-top: .2rem; color: var(--theme-accent-muted); font: 500 .62rem var(--font-mono); letter-spacing: .06em; text-transform: uppercase; }
 .contact-form input, .contact-form textarea { width: 100%; padding: .8rem; border: 1px solid rgba(var(--theme-accent-rgb), .23); border-radius: 0; outline: none; background: var(--theme-panel-deep); color: #e5f1fb; font-size: .8rem; transition: border-color 160ms ease, box-shadow 160ms ease; }
 .contact-form textarea { resize: vertical; }
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(194, 210, 255, 0.49); }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--theme-accent); box-shadow: 0 0 0 3px rgba(var(--theme-accent-rgb), .1); }
 .contact-form__submit { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding-top: .45rem; }

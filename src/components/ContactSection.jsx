@@ -1,10 +1,51 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { profile } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 
 export default function ContactSection() {
-  const [copyStatus, setCopyStatus] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState("");
+  const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (isSending) return;
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setFormError("Contact form is currently unavailable.");
+      return;
+    }
+
+    setIsSending(true);
+    setFormSubmitted(false);
+    setFormError("");
+
+    const form = event.currentTarget;
+
+    try {
+      await emailjs.sendForm(serviceId, templateId, form, publicKey);
+
+      setFormSubmitted(true);
+      form.reset();
+    } catch (error) {
+      console.error("EmailJS error:", {
+        status: error.status,
+        text: error.text,
+        message: error.message,
+      });
+
+      setFormError("Unable to send your message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
+  };
+  const [copyStatus, setCopyStatus] = useState("");
 
   async function copyEmail() {
     try {
@@ -16,13 +57,6 @@ export default function ContactSection() {
         "Could not access the clipboard. Please copy the email address above.",
       );
     }
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    event.currentTarget.reset();
-    setFormSubmitted(true);
-    window.setTimeout(() => setFormSubmitted(false), 5000);
   }
 
   return (
@@ -85,12 +119,26 @@ export default function ContactSection() {
           />
           <div className="contact-form__submit">
             <span>I try to respond within 24 hours</span>
-            <button className="button button--primary" type="submit">
-              Send<span aria-hidden="true"></span>
+
+            <button
+              className="button button--primary"
+              type="submit"
+              disabled={isSending}
+            >
+              {isSending ? "Sending..." : "Send"}
+              <span aria-hidden="true"></span>
             </button>
           </div>
-          <p aria-live="polite" className="form-status form-status--success">
-            {formSubmitted ? "Transmission sent successfully. Thank you!" : ""}
+
+          <p
+            aria-live="polite"
+            className={`form-status ${
+              formError ? "form-status--error" : "form-status--success"
+            }`}
+          >
+            {formSubmitted
+              ? "Message sent successfully. Thank you!"
+              : formError}
           </p>
         </form>
       </div>
