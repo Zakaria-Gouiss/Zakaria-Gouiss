@@ -47,7 +47,7 @@ function ProjectCard({ project, index }) {
 export default function ProjectsSection() {
   return (
     <section className="content-section" id="projects">
-      <SectionHeading number="03" title="Various Projects" />
+      <SectionHeading number="3" title="Various Projects" />
       <div className="project-list">
         {projects.map((project, index) => (
           <ProjectCard index={index} key={project.title} project={project} />

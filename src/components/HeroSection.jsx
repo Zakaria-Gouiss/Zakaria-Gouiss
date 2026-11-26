@@ -1,38 +1,21 @@
 import { profile } from "../data/portfolio";
-
-const metrics = [
-  {
-    label: "Academic benchmark",
-    value: "3.92",
-    suffix: "/4.0",
-    note: "Dean's List Honors",
-  },
-  { label: "Internships", value: "2x", note: "Medpace & GE Aero" },
-  { label: "Hackathon honors", value: "1st", note: "NKU Champion" },
-];
+import portrait from "../assets/test1-Photoroom.png";
 
 export default function HeroSection() {
   return (
     <section className="hero-section" id="hero">
       <div className="hero-copy">
-        <div className="availability">
-          <span className="status-dot status-dot--pulse" />
-          <span>
-            Senior CS Student @ Northern Kentucky University (&apos;27)
-          </span>
-        </div>
-
         <div className="hero-intro">
           <h1>
             Software Development &amp;
             <span> AI/ML Engineering</span>
           </h1>
           <p className="hero-intro__summary">
-            I am a computer scientist dedicated to building software,
-            infrastructure, and high-value systems. Guided by the mission to
-            spread valuable knowledge around the world, I develop accessible
-            applications designed to break down barriers to education and
-            insights.
+            I am a computer science student passionate about building software
+            that solves practical problems. My interests span full-stack
+            development, machine learning, and infrastructure, with a focus on
+            creating reliable, accessible applications that make everyday tasks
+            easier and more efficient.
           </p>
         </div>
 
@@ -60,10 +43,11 @@ export default function HeroSection() {
           <span>Covington, KY</span>
         </div>
         <div className="profile-art">
-          <div className="profile-art__orbit profile-art__orbit--one" />
-          <div className="profile-art__orbit profile-art__orbit--two" />
-          <div className="profile-art__glow" />
-          <div className="profile-art__monogram">Z G</div>
+          <img
+            className="profile-art__portrait"
+            src={portrait}
+            alt={`${profile.name} portrait`}
+          />
         </div>
       </aside>
     </section>

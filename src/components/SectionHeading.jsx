@@ -8,10 +8,7 @@ export default function SectionHeading({
   return (
     <div className="section-heading">
       <div className="section-heading__topline">
-        <p>
-          <span className="section-heading__dot" />
-          {number}
-        </p>
+        <p>{number}</p>
         <span className="section-heading__rule" />
         {action || <span className="section-heading__meta">{meta}</span>}
       </div>

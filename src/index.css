@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
 :root {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #e7f2ff;
-  background: #020711;
+
+  color: #e7fff0;
+  background: #050211;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
 
-  --color-bg: #020711;
-  --color-panel: #071426;
-  --color-panel-deep: #040d1b;
-  --color-line: rgba(99, 185, 241, 0.19);
-  --color-line-bright: rgba(91, 203, 255, 0.45);
-  --color-text: #e7f2ff;
-  --color-muted: #93abc3;
-  --color-dim: #57728f;
-  --color-cyan: #62d8f6;
-  --color-blue: #58a7ff;
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --color-bg: var(--theme-bg);
+  --color-panel: var(--theme-panel);
+  --color-panel-deep: var(--theme-panel-deep);
+  --color-line: rgba(var(--theme-accent-rgb), 0.19);
+  --color-line-bright: rgba(var(--theme-accent-rgb), 0.45);
+  --color-text: var(--theme-text);
+  --color-muted: var(--theme-text-muted);
+  --color-dim: var(--theme-accent-muted);
+  --font-display: sans-serif;
+  --font-mono: 'Fragment Mono';
 }
 
 * {
@@ -64,12 +62,12 @@ button {
 }
 
 ::selection {
-  color: #04101b;
-  background: var(--color-cyan);
+  color: #ffffff;
+  background: #5a00ea;
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-cyan);
+  outline: 2px solid var(--color-scarlet);
   outline-offset: 4px;
 }
 

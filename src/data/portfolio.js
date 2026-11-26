@@ -6,7 +6,7 @@ export const profile = {
   name: 'Zakaria Gouiss',
   email: 'zgouiss15@gmail.com',
   role: 'Software and Machine Learning Engineer',
-  location: 'Greater Cincinnati Metropolitan Area',
+  location: 'Cincinnati Metropolitan Area',
   github: 'https://github.com/Zakaria-Gouiss/',
   linkedIn: 'https://linkedin.com/in/zakariagouiss',
 }
@@ -24,17 +24,16 @@ export const experience = [
   {
     number: '01',
     company: 'GE Aerospace',
-    field: 'Commercial & Military Jet Engine Manufacturer',
-    role: 'Cybersecurity Intern',
+    role: 'Cybersecurity Project Management Intern',
     period: 'Jun 2026 — Aug 2026',
     location: 'Evendale, OH',
     summary:
       'Worked within various IT and cybersecurity teams at GE Aerospace to leverage digital technologies to create innovative solutions to solve business problems.',
     achievements: [
-      'Software engineer experience in translating stakeholder feedback into working web solutions via Agile software development using React, PostgreSQL, TypeScript, and Docker',
-      'Collaborated on Operational Technology (OT) initiatives by analyzing data from multiple inventory sources to support network segmentation and cybersecurity objectives',
-      'Supporting digital transformation initiatives by migrating projects into new reporting softwares to improve accessibility, visibility, and reporting for high-priority cybersecurity initiatives',
-      'Worked directly on lean methodology teams as part of priority and committee responsibilities to maximize customer value while minimizing waste in accordance to the GE Aerospace behaviors'
+      'Contributed to a software engineering team in translating stakeholder feedback into working web solutions via Agile methodology using React, PostgreSQL, and TypeScript',
+      'Collaborated on Operational Technology (OT) initiatives by analyzing data from multiple inventory sources to support network segmentation and isolation objectives',
+      'Supporting digital transformation initiatives by migrating projects into a new project management software to improve accessibility and reporting for high-priority cybersecurity initiatives',
+      'Worked directly on a lean methodology team as part of intern committee responsibilities to create learning opportunities on maximizing customer value while minimizing waste'
     ],
     technologies: [
       
@@ -49,16 +48,15 @@ export const experience = [
   {
     number: '02',
     company: 'Medpace',
-    field: 'Clinical Research Organization',
     role: 'Network Engineer Intern',
     period: 'Jan 2026 — May 2026',
     location: 'Cincinnati, OH',
     summary:
       'Supported enterprise network, security, and data center infrastructure operations across production and lab environments.',
     achievements: [
-      'Contributed to Arista POC environment setup, configuration validation, and connectivity testing, supporting the selection of a solution that was 33% more cost-efficient than the existing vendor',
-      'Supported switch wipe and refresh operations as part of infrastructure lifecycle management, including as part of a new India-based location',
-      'Developed Guardicore microsegmentation policy and engaged in validation and rule enforcement testing to prevent lateral movement ',
+      'Contributed to a network proof-of-concept (POC), with environment setup, configuration validation, and connectivity testing, which supported the selection of a solution that was 33% more cost-efficient than the existing vendor',
+      'Supported switch wipe and refresh operations as part of infrastructure lifecycle management, as well as part of setting up a new India-based location',
+      'Developed network microsegmentation policy and engaged in validation and rule enforcement testing to prevent lateral movement across the enterprise network',
       'Worked on daily ServiceNow tickets and troubleshooting for secure web access, proxy, and policy enforcement issues to maintain the Zscaler zero-trust environment '
     ],
     technologies: [
@@ -78,7 +76,7 @@ export const projects = [
     title: 'Engagement.live',
     category: 'NKU Hackathon',
     description:
-      'Collaborated on a campus app for NKU built during the 2026 NKU Community Hackathon, and awarded first place. The project combines campus navigation, parking and rec availability, schedule planning, event discovery, and admin tooling into a single app. ',
+      'Collaborated on a campus app for NKU built during the 2026 NKU Community Hackathon, and awarded first place. The project combines campus navigation, parking and rec availability, event discovery, and admin tooling into a single applications. ',
     technologies: ['Leaflet', 'Tailwind CSS', 'React with JavaScript', 'MongoDB', 'Node & Express', 'OpenStreetMap'],
     repositoryLabel: 'Check it out',
     link: 'https://pbierley.github.io/NKU-Community-Hackathon/',
@@ -87,16 +85,17 @@ export const projects = [
   },
   {
     title: 'LyWeek',
-    category: 'Full-Stack Web Dev',
+    category: 'Full-Stack Web Development',
     description:
-      'A designated weekly assignment tracker for college students. Allows user to create courses and assignments for each course for a designated semester, updating them and completing them each week.',
+      'A weekly assignment tracker for college students, which allows users to create assignments for each course for a designated semester, updating them and completing them each week.',
     technologies: [
       'JavaScript',
       'React',
       'Node.js / Express',
       'PostgreSQL',
-      'HTML / CSS',
-      'REST APIs'
+
+      'REST APIs',
+      'Vercel'
     ],
     repositoryLabel: 'Try it yourself',
     link: 'https://lyweek.vercel.app',
@@ -107,7 +106,7 @@ export const projects = [
     title: 'CNN Clothing Classifier',
     category: 'Deep Learning',
     description:
-      'An independently designed and trained custom convolutional neural network designed to accurately classify garments of clothing. Acheived 87% accuracy on a 25GB dataset of over 44,000 high-quality images.',
+      'An independently designed and trained custom convolutional neural network (CNN) designed to accurately classify articles of clothing. Acheived 87% accuracy on a 25GB dataset of over 44,000 high-quality images.',
     technologies: ['TensorFlow', 'Pandas', 'Python', 'NumPy', 'Jupyter Notebooks', 'Keras', 'Matplotlib'],
     imageLink: gradioImage
   },
@@ -122,15 +121,14 @@ export const skillGroups = [
   },
   {
     number: '02',
-    name: 'Backends & Storage',
+    name: 'Backend',
     label: 'Persistence',
     skills: [
       'REST APIs',
       'Node.js',
-      'PostgreSQL',
-      'SQL Server',
-      'Express',
       'CORS',
+      'Render',
+      'Express',
     ],
   },
   {
@@ -150,18 +148,17 @@ export const skillGroups = [
     number: '04',
     name: 'Frontend Engineering',
     label: 'UI / UX',
-    skills: ['React', 'CSS', 'HTML5', 'Vite', 'UI Design', 'Tailwind', 'JavaScript', 'ESLint'],
+    skills: ['React', 'CSS3', 'HTML5', 'Vite', 'UI/UX', 'Tailwind', 'JavaScript', 'ESLint'],
   },
   {
     number: '05',
-    name: 'Cloud & DevOps',
-    label: 'Infra',
+    name: 'Databases',
+    label: 'DB',
     skills: [
-      'Docker',
-      'Git / GitHub',
-      'CI/CD',
-      'Ubuntu Linux',
-      'Deployment'
+      'PostgreSQL',
+      'MongoDB',
+      'NoSQL',
+      'Oracle SQL'
     ],
   },
   {
@@ -170,7 +167,6 @@ export const skillGroups = [
     label: 'Infra',
     skills: [
       'SSH',
-      'Cybersecurity',
       'DHCP / DNS',
       'IPv4',
       'Cisco',
@@ -195,7 +191,7 @@ export const curriculum = [
   {
     title: 'Machine Learning & AI',
     description:
-      'Deep neural networks, computer vision, regression models, statistical inference.',
+      'Deep neural networks, computer vision, regression models,  statistical inference.',
   },
   {
     title: 'Database Systems',

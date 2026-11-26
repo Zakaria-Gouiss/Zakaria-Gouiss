@@ -1,64 +1,44 @@
 import SectionHeading from "./SectionHeading";
 
-const highlights = [
-  {
-    label: "Industry internships",
-    value: "Medpace + GE Aerospace",
-    detail:
-      "Clinical trial cloud infrastructure & high-frequency flight propulsion telemetry.",
-  },
-  {
-    label: "Academic honors",
-    value: "3.92 / 4.00 cumulative GPA",
-    detail:
-      "Continuous Dean’s List Honor Roll across all academic terms at NKU College of Informatics.",
-  },
-  {
-    label: "Hackathon honors",
-    value: "1st place hackathon champion",
-    detail:
-      "Awarded 1st Place overall for the Campus Navigator & Peer Connect real-time coordination engine.",
-  },
-];
-
 export default function AboutSection() {
   return (
     <section className="content-section about-section" id="about">
-      <SectionHeading number="01" title="About Me" />
+      <SectionHeading number="1" title="About Me" />
       <div className="about-layout">
         <article className="panel about-story">
           <p className="eyebrow">My philosophy & mission</p>
           <h3>
-            Transforming ideas into technology-based solutions to spread
-            knowledge and information.
+            Build useful software, solve problems, and make tech work for
+            people:
           </h3>
           <p>
             I am a graduating senior in Computer Science at{" "}
-            <strong>Northern Kentucky University</strong>, focused on developing
-            full-stack software solutions and machine learning projects.
+            <strong>Northern Kentucky University</strong>, interested in
+            building practical software solutions and exploring applications of
+            machine learning. I enjoy solving problems, learning new
+            technologies, and turning ideas into tools that people can actually
+            use.
           </p>
+
           <p>
-            Across <strong>enterprise internships</strong>, I contributed to
-            using information technology to solve business problems. At Medpace,
-            I developed and audited microsegmentation policy and helped analyze
-            network data to support a more cost-effective vendor solution. At GE
-            Aerospace, I experimented and helped deploy new project management
-            sofware for high-priority cybersecurity initiatives.
+            Through internships, I have gained experience working in enterprise
+            IT environments where accuracy, security, and confidentiality
+            matter. At <strong>Medpace</strong>, I developed and audited network
+            microsegmentation policies and analyzed network data to help
+            evaluate more cost-effective security solutions. At{" "}
+            <strong>GE Aerospace</strong>, I helped evaluate and deploy project
+            management software supporting high-priority cybersecurity
+            initiatives. These experiences strengthened my ability to work with
+            business-critical systems, handle sensitive information responsibly,
+            and collaborate across technical teams.
           </p>
+
           <p>
-            My <strong>philosophy</strong> is simple: With all of the latest
-            technology trends, there is always an exciting opportunity to
-            increase productivity, spread valuable knowledge, and learning new
-            skills. I use digital and information technology to embark on these
-            opportunities to help design a future where accessing information
-            and gaining knowledge is available for all.
-          </p>
-          <p>
-            I always enjoy networking with others in the world of technology and
-            learn new tech skills every day. I use my skills throughout my
-            professional and personal projects to help work towards my mission
-            of a more informed and intelligent society. And outside of tech, I
-            enjoy my hobbies of making music and playing soccer :)
+            I believe good technology should make people's work easier, solve
+            real problems, and be built with the people using it in mind.
+            Whether I am developing a full-stack application, experimenting with
+            machine learning, or learning a new framework, I value curiosity,
+            thoughtful problem-solving, and continuous improvement.
           </p>
         </article>
         {/* add 2 pictures, 1 of hackathon, 1 at GE*/}

@@ -27,18 +27,15 @@ export default function ContactSection() {
 
   return (
     <section className="content-section" id="contact">
-      <SectionHeading eyebrow="" number="06" title="Get in touch & connect" />
+      <SectionHeading eyebrow="" number="6" title="Get in touch & connect" />
       <div className="contact-layout">
         <div className="contact-copy">
           <p className="eyebrow">Let&apos;s work together</p>
-          <h3>
-            Open to software, machine learning, infrastructure, or AI roles.
-          </h3>
+          <h3>Any cool ideas? Let's chat!</h3>
 
           <div className="contact-details">
             <p>
-              <span aria-hidden="true">•</span> {profile.location} • Open to
-              Relocation & Remote
+              <span aria-hidden="true">•</span> {profile.location}
             </p>
             <a href={`mailto:${profile.email}`}>
               <span aria-hidden="true">•</span> {profile.email}
@@ -60,12 +57,12 @@ export default function ContactSection() {
           <div className="contact-form__heading">
             <h3>Contact form</h3>
           </div>
-          <label htmlFor="sender-name">Your name / recruiter / team</label>
+          <label htmlFor="sender-name">Name</label>
           <input
             autoComplete="name"
             id="sender-name"
             name="name"
-            placeholder="e.g. Sarah Jenkins // Engineering Manager"
+            placeholder="John Doe"
             required
             type="text"
           />
@@ -74,7 +71,7 @@ export default function ContactSection() {
             autoComplete="email"
             id="sender-email"
             name="email"
-            placeholder="s.jenkins@company.com"
+            placeholder="johndoe@example.com"
             required
             type="email"
           />
@@ -82,7 +79,7 @@ export default function ContactSection() {
           <textarea
             id="sender-message"
             name="message"
-            placeholder="Hi Zakaria, we came across your projects and would love to chat regarding software engineering roles..."
+            placeholder="Hi Zakaria, this is John ..."
             required
             rows="4"
           />

@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 export default function ExperienceSection() {
   return (
     <section className="content-section" id="experience">
-      <SectionHeading number="02" title="Professional Work Experience" />
+      <SectionHeading number="2" title="Professional Work Experience" />
       <div className="experience-list">
         {experience.map((job) => (
           <article className="panel experience-card" key={job.company}>

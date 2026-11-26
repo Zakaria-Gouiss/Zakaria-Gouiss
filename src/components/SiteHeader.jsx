@@ -37,7 +37,6 @@ export default function SiteHeader() {
         >
           {navigation.map((item) => (
             <a href={item.href} key={item.href} onClick={closeMenu}>
-              <span>{item.number}/</span>
               {item.label}
             </a>
           ))}
